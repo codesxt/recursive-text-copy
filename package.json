@@ -1,0 +1,142 @@
+{
+  "name": "recursive-text-copy",
+  "displayName": "Recursive Text Copy",
+  "description": "Recursively copies a folder's structure and contents to the clipboard, formatted for LLMs.",
+  "version": "0.0.1",
+  "publisher": "EseMismoBruno",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other",
+    "Machine Learning"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "recursive-text-copy.copy",
+        "title": "Recursive Text Copy"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "recursive-text-copy.copy",
+          "group": "6_rtc"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Recursive Text Copy",
+      "properties": {
+        "recursiveTextCopy.ignore": {
+          "type": "array",
+          "default": [
+            "**/node_modules/**",
+            "**/.git/**",
+            "**/.svn/**",
+            "**/.hg/**",
+            "**/.vscode/**",
+            "**/dist/**",
+            "**/build/**",
+            "**/coverage/**",
+            "**/.DS_Store/**",
+            "**/*.lock",
+            "**/*.log",
+            "**/*.exe",
+            "**/*.dll",
+            "**/*.so",
+            "**/*.o",
+            "**/*.a",
+            "**/*.lib",
+            "**/*.jar",
+            "**/*.war",
+            "**/*.ear",
+            "**/*.class",
+            "**/*.pyc",
+            "**/*.pyo",
+            "**/*.pyd",
+            "**/*.png",
+            "**/*.jpg",
+            "**/*.jpeg",
+            "**/*.gif",
+            "**/*.bmp",
+            "**/*.ico",
+            "**/*.tif",
+            "**/*.tiff",
+            "**/*.webp",
+            "**/*.svg",
+            "**/*.zip",
+            "**/*.tar",
+            "**/*.gz",
+            "**/*.bz2",
+            "**/*.7z",
+            "**/*.rar",
+            "**/*.tgz",
+            "**/*.pdf",
+            "**/*.doc",
+            "**/*.docx",
+            "**/*.xls",
+            "**/*.xlsx",
+            "**/*.ppt",
+            "**/*.pptx",
+            "**/*.odt",
+            "**/*.ods",
+            "**/*.odp",
+            "**/*.mp3",
+            "**/*.wav",
+            "**/*.flac",
+            "**/*.ogg",
+            "**/*.m4a",
+            "**/*.mp4",
+            "**/*.mkv",
+            "**/*.avi",
+            "**/*.mov",
+            "**/*.wmv",
+            "**/*.eot",
+            "**/*.otf",
+            "**/*.ttf",
+            "**/*.woff",
+            "**/*.woff2",
+            "**/*.db",
+            "**/*.sqlite",
+            "**/*.sqlite3",
+            "**/*.bak"
+          ],
+          "description": "An array of glob patterns for files and folders to ignore."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/minimatch": "^6.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.32.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "minimatch": "^10.0.3"
+  },
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codesxt/recursive-text-copy.git"
+  }
+}
