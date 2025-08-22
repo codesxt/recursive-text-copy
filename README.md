@@ -1,4 +1,4 @@
-# Copy as Context
+# Recursive Text Copy
 
 ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/EseMismoBruno.recursive-text-copy?style=for-the-badge&label=Marketplace)
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/EseMismoBruno.recursive-text-copy?style=for-the-badge)
