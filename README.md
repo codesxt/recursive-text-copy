@@ -1,8 +1,8 @@
 # Copy as Context
 
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/EseMismoBruno.copy-as-context?style=for-the-badge&label=Marketplace)
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/EseMismoBruno.copy-as-context?style=for-the-badge)
-![License](https://img.shields.io/github/license/codesxt/copy-as-context?style=for-the-badge)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/EseMismoBruno.recursive-text-copy?style=for-the-badge&label=Marketplace)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/EseMismoBruno.recursive-text-copy?style=for-the-badge)
+![License](https://img.shields.io/github/license/codesxt/recursive-text-copy?style=for-the-badge)
 
 **Easily copy entire folder structures and their contents into your clipboard, perfectly formatted for Large Language Models (LLMs) like ChatGPT, Claude, and Gemini.**
 
